@@ -29,9 +29,10 @@ export default function Profile(props) {
   return (
     <div>
       <h4>hello {props.currentUser.name}</h4>
+      <h5>your email is {props.currentUser.email}</h5>
 
       <div>
-      <p>you have a message from the auth locked route:</p>
+      <p>you have a secret message from the auth locked route:</p>
 
       <p> {message} </p>
       </div>
