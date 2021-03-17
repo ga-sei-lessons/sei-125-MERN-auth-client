@@ -1,7 +1,7 @@
 export default function Welcome() {
   return (
     <div>
-      hello from Welcome
+      <h3>User app</h3>
     </div>
   )
 }
