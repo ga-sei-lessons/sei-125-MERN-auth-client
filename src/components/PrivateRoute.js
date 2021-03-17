@@ -1,3 +1,5 @@
+// this is not used
+
 import { useEffect } from 'react'
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
