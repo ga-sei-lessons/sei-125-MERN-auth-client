@@ -29,7 +29,10 @@ export default function Navbar(props) {
 
   return (
     <nav>
-      <h5>user app</h5>
+      <Link to="/">
+        <h5>user app</h5>
+      </Link>
+      
       {props.currentUser ? loggedIn : loggedOut}
     </nav>
   )

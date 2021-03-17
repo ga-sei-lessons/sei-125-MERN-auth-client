@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
-import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import Navbar from './components/Navbar'
 import Login from './components/Login'
@@ -62,7 +61,7 @@ function App() {
 
             <Route 
               path="/profile" 
-              render={(props) => currentUser ? <Profile {...props} currentUser={ currentUser } /> : <Redirect to="/login" /> }
+              render={(props) => currentUser ? <Profile {...props} handleLogout={handleLogout} currentUser={ currentUser } /> : <Redirect to="/login" /> }
             />
 
             <Route exact path="/" component={ Welcome } />

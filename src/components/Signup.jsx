@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import jwt_decode from 'jwt-decode'
 import { Redirect } from 'react-router-dom'
@@ -38,7 +38,7 @@ export default function Signup(props) {
       
     } catch(error) {
       // if the email was found in the db
-      if(error.response.status == 400) {
+      if(error.response.status === 400) {
         setMessage('email exists')
       } else {
         // otherwise log the error for debug
